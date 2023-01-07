@@ -2,6 +2,11 @@ import { gql, ApolloServer } from 'apollo-server';
 
 // "Interface" of the API
 const typeDefs = gql`
+    # By default, the schema is defined as:
+    schema {
+        query: Query
+    }
+
     type Query {
         greeting: String,
     }
